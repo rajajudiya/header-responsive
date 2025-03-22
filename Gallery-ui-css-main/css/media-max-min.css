@@ -1,0 +1,133 @@
+/* Small Screens (360px - 480px) */
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Tablets (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Small Laptops (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 720px;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: show;
+    }
+
+    .main-nav {
+        display: none;
+    }
+    .menu-toggle {
+        display: flex;
+        position: relative;
+        margin-left: auto;
+    }
+    .contant-info {
+        /* display: flex; */
+        align-items: center;
+        border-left: 1px solid #000;
+        border-right: 1px solid #000;
+        padding: 0 15px;
+        font-size: 12px;
+        display: none;
+      }
+}
+
+/* Desktops (1025px - 1440px) */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .container {
+        width: 960px;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+        position: relative;
+        margin-left: auto;
+    }
+
+    .side-nav {
+        width: 40%;
+    }
+
+    .logo.hide {
+        display: none;
+    }
+
+    .main-nav {
+        display: none;
+    }
+}
+
+/* Large Screens (1441px - 1920px) */
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+    .container {
+        width: 1140px;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+
+    .main-nav {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        justify-content: center;
+    }
+
+    .menu-toggle,
+    .side-nav {
+        display: none !important;
+    }
+}
+
+/* Extra Large Screens (1921px and above) */
+@media screen and (min-width: 1921px) {
+    .container {
+        width: 1320px;
+    }
+
+    .nav-links {
+        display: flex;
+    }
+}
